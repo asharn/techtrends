@@ -1,0 +1,296 @@
+INFO:werkzeug:09/11/2022, 22:21:30, [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.0.100:3111
+INFO:werkzeug:09/11/2022, 22:21:30, [33mPress CTRL+C to quit[0m
+ERROR:app:09/11/2022, 22:21:36, Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 88, in metrics
+    connection = get_db_connection()
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 15, in get_db_connection
+    total_connection = total_connection + 1
+UnboundLocalError: local variable 'total_connection' referenced before assignment
+INFO:werkzeug:09/11/2022, 22:21:36, 127.0.0.1 - - [11/Sep/2022 22:21:36] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+ERROR:app:09/11/2022, 22:21:42, Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 88, in metrics
+    connection = get_db_connection()
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 15, in get_db_connection
+    total_connection = total_connection + 1
+UnboundLocalError: local variable 'total_connection' referenced before assignment
+INFO:werkzeug:09/11/2022, 22:21:42, 127.0.0.1 - - [11/Sep/2022 22:21:42] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+ERROR:app:09/11/2022, 22:22:40, Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 33, in index
+    connection = get_db_connection()
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 15, in get_db_connection
+    total_connection = total_connection + 1
+UnboundLocalError: local variable 'total_connection' referenced before assignment
+INFO:werkzeug:09/11/2022, 22:22:40, 127.0.0.1 - - [11/Sep/2022 22:22:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:app:09/11/2022, 22:24:29, /healthz service is call with response : {'result': 'OK - healthy'}
+INFO:werkzeug:09/11/2022, 22:24:29, 127.0.0.1 - - [11/Sep/2022 22:24:29] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:09/11/2022, 22:50:30, [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.0.100:3111
+INFO:werkzeug:09/11/2022, 22:50:30, [33mPress CTRL+C to quit[0m
+INFO:app:09/11/2022, 22:50:48, /healthz service is call with response : {'result': 'OK - healthy'}
+ERROR:app:09/11/2022, 22:50:48, Exception on /healthz [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 83, in status
+    response=json.dumps({"result":"OK - healthy"}, indent=4, prety=True),
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\json\__init__.py", line 124, in dumps
+    return app.json.dumps(obj, **kwargs)
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\json\provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 234, in dumps
+    return cls(
+TypeError: __init__() got an unexpected keyword argument 'prety'
+INFO:werkzeug:09/11/2022, 22:50:48, 127.0.0.1 - - [11/Sep/2022 22:50:48] "[35m[1mGET /healthz HTTP/1.1[0m" 500 -
+INFO:werkzeug:09/11/2022, 22:52:31, [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.0.100:3111
+INFO:werkzeug:09/11/2022, 22:52:31, [33mPress CTRL+C to quit[0m
+INFO:app:09/11/2022, 22:52:34, /healthz service is call with response : {'result': 'OK - healthy'}
+INFO:werkzeug:09/11/2022, 22:52:34, 127.0.0.1 - - [11/Sep/2022 22:52:34] "GET /healthz HTTP/1.1" 200 -
+ERROR:app:09/11/2022, 22:52:43, Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 93, in metrics
+    connection = get_db_connection()
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 15, in get_db_connection
+    total_connection = total_connection + 1
+UnboundLocalError: local variable 'total_connection' referenced before assignment
+INFO:werkzeug:09/11/2022, 22:52:43, 127.0.0.1 - - [11/Sep/2022 22:52:43] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+INFO:werkzeug:09/11/2022, 22:56:23, [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.0.100:3111
+INFO:werkzeug:09/11/2022, 22:56:23, [33mPress CTRL+C to quit[0m
+ERROR:app:09/11/2022, 22:56:31, Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 94, in metrics
+    connection = get_db_connection()
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 16, in get_db_connection
+    total_connection = total_connection + 1
+UnboundLocalError: local variable 'total_connection' referenced before assignment
+INFO:werkzeug:09/11/2022, 22:56:31, 127.0.0.1 - - [11/Sep/2022 22:56:31] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+ERROR:app:09/11/2022, 22:56:34, Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 94, in metrics
+    connection = get_db_connection()
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 16, in get_db_connection
+    total_connection = total_connection + 1
+UnboundLocalError: local variable 'total_connection' referenced before assignment
+INFO:werkzeug:09/11/2022, 22:56:34, 127.0.0.1 - - [11/Sep/2022 22:56:34] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+ERROR:app:09/11/2022, 22:59:37, Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 94, in metrics
+    connection = get_db_connection()
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 16, in get_db_connection
+    total_connection = total_connection + 1
+UnboundLocalError: local variable 'total_connection' referenced before assignment
+INFO:werkzeug:09/11/2022, 22:59:37, 127.0.0.1 - - [11/Sep/2022 22:59:37] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+INFO:werkzeug:09/11/2022, 22:59:44, [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.0.100:3111
+INFO:werkzeug:09/11/2022, 22:59:44, [33mPress CTRL+C to quit[0m
+ERROR:app:09/11/2022, 22:59:46, Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 94, in metrics
+    connection = get_db_connection()
+  File "C:\external-resources-ashish\Shell-Software-Engineer-Train-to-Hire-Scholarship-Program\tech-trends\techtrends\app.py", line 16, in get_db_connection
+    total_connection = total_connection + 1
+UnboundLocalError: local variable 'total_connection' referenced before assignment
+INFO:werkzeug:09/11/2022, 22:59:46, 127.0.0.1 - - [11/Sep/2022 22:59:46] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+INFO:werkzeug:09/11/2022, 23:00:20, [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.0.100:3111
+INFO:werkzeug:09/11/2022, 23:00:20, [33mPress CTRL+C to quit[0m
+INFO:app:09/11/2022, 23:00:37, SELECT count(id) FROM posts
+INFO:app:09/11/2022, 23:00:37, /metrics service is call with response : 
+INFO:werkzeug:09/11/2022, 23:00:37, 127.0.0.1 - - [11/Sep/2022 23:00:37] "GET /metrics HTTP/1.1" 200 -
+INFO:app:09/11/2022, 23:00:49, SELECT * FROM posts
+INFO:app:09/11/2022, 23:00:49, Articles "2020 CNCF Annual Report,KubeCon + CloudNativeCon 2021,Kubernetes v1.20 Release Notes,CNCF Cloud Native Interactive Landscape,CNCF Cloud Native Definition v1.0,Kubernetes Certification" fetched from database!
+INFO:werkzeug:09/11/2022, 23:00:49, 127.0.0.1 - - [11/Sep/2022 23:00:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:09/11/2022, 23:00:49, 127.0.0.1 - - [11/Sep/2022 23:00:49] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:09/11/2022, 23:00:57, SELECT count(id) FROM posts
+INFO:app:09/11/2022, 23:00:57, /metrics service is call with response : 
+INFO:werkzeug:09/11/2022, 23:00:57, 127.0.0.1 - - [11/Sep/2022 23:00:57] "GET /metrics HTTP/1.1" 200 -
+INFO:app:09/11/2022, 23:01:01, SELECT count(id) FROM posts
+INFO:app:09/11/2022, 23:01:01, /metrics service is call with response : 
+INFO:werkzeug:09/11/2022, 23:01:01, 127.0.0.1 - - [11/Sep/2022 23:01:01] "GET /metrics HTTP/1.1" 200 -
+INFO:app:09/11/2022, 23:01:03, SELECT count(id) FROM posts
+INFO:app:09/11/2022, 23:01:03, /metrics service is call with response : 
+INFO:werkzeug:09/11/2022, 23:01:03, 127.0.0.1 - - [11/Sep/2022 23:01:03] "GET /metrics HTTP/1.1" 200 -
+INFO:app:09/11/2022, 23:01:04, SELECT count(id) FROM posts
+INFO:app:09/11/2022, 23:01:04, /metrics service is call with response : 
+INFO:werkzeug:09/11/2022, 23:01:04, 127.0.0.1 - - [11/Sep/2022 23:01:04] "GET /metrics HTTP/1.1" 200 -
+INFO:app:09/11/2022, 23:01:07, SELECT count(id) FROM posts
+INFO:app:09/11/2022, 23:01:07, /metrics service is call with response : 
+INFO:werkzeug:09/11/2022, 23:01:07, 127.0.0.1 - - [11/Sep/2022 23:01:07] "GET /metrics HTTP/1.1" 200 -
+INFO:app:09/11/2022, 23:01:08, SELECT count(id) FROM posts
+INFO:app:09/11/2022, 23:01:08, /metrics service is call with response : 
+INFO:werkzeug:09/11/2022, 23:01:08, 127.0.0.1 - - [11/Sep/2022 23:01:08] "GET /metrics HTTP/1.1" 200 -
+INFO:app:09/11/2022, 23:01:11, SELECT * FROM posts
+INFO:app:09/11/2022, 23:01:11, Articles "2020 CNCF Annual Report,KubeCon + CloudNativeCon 2021,Kubernetes v1.20 Release Notes,CNCF Cloud Native Interactive Landscape,CNCF Cloud Native Definition v1.0,Kubernetes Certification" fetched from database!
+INFO:werkzeug:09/11/2022, 23:01:11, 127.0.0.1 - - [11/Sep/2022 23:01:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:09/11/2022, 23:01:11, 127.0.0.1 - - [11/Sep/2022 23:01:11] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:09/11/2022, 23:01:14, SELECT * FROM posts
+INFO:app:09/11/2022, 23:01:14, Articles "2020 CNCF Annual Report,KubeCon + CloudNativeCon 2021,Kubernetes v1.20 Release Notes,CNCF Cloud Native Interactive Landscape,CNCF Cloud Native Definition v1.0,Kubernetes Certification" fetched from database!
+INFO:werkzeug:09/11/2022, 23:01:14, 127.0.0.1 - - [11/Sep/2022 23:01:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:09/11/2022, 23:01:14, 127.0.0.1 - - [11/Sep/2022 23:01:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:09/11/2022, 23:01:18, SELECT count(id) FROM posts
+INFO:app:09/11/2022, 23:01:18, /metrics service is call with response : 
+INFO:werkzeug:09/11/2022, 23:01:18, 127.0.0.1 - - [11/Sep/2022 23:01:18] "GET /metrics HTTP/1.1" 200 -
+INFO:app:09/11/2022, 23:01:54, SELECT * FROM posts
+INFO:app:09/11/2022, 23:01:54, Articles "2020 CNCF Annual Report,KubeCon + CloudNativeCon 2021,Kubernetes v1.20 Release Notes,CNCF Cloud Native Interactive Landscape,CNCF Cloud Native Definition v1.0,Kubernetes Certification" fetched from database!
+INFO:werkzeug:09/11/2022, 23:01:54, 127.0.0.1 - - [11/Sep/2022 23:01:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:09/11/2022, 23:01:54, 127.0.0.1 - - [11/Sep/2022 23:01:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:09/11/2022, 23:01:55, SELECT * FROM posts WHERE id = 1
+INFO:app:09/11/2022, 23:01:55, Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:09/11/2022, 23:01:55, 127.0.0.1 - - [11/Sep/2022 23:01:55] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:09/11/2022, 23:01:56, 127.0.0.1 - - [11/Sep/2022 23:01:56] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:09/11/2022, 23:02:04, SELECT * FROM posts
+INFO:app:09/11/2022, 23:02:04, Articles "2020 CNCF Annual Report,KubeCon + CloudNativeCon 2021,Kubernetes v1.20 Release Notes,CNCF Cloud Native Interactive Landscape,CNCF Cloud Native Definition v1.0,Kubernetes Certification" fetched from database!
+INFO:werkzeug:09/11/2022, 23:02:04, 127.0.0.1 - - [11/Sep/2022 23:02:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:09/11/2022, 23:02:04, 127.0.0.1 - - [11/Sep/2022 23:02:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+224:INFO:werkzeug:09/11/2022, 23:08:00, [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.0.100:3111
+224:INFO:werkzeug:09/11/2022, 23:08:00, [33mPress CTRL+C to quit[0m
+24:INFO:app:09/11/2022, 23:08:06, SELECT * FROM posts WHERE id = 1
+52:INFO:app:09/11/2022, 23:08:06, Article "2020 CNCF Annual Report" retrieved!
+224:INFO:werkzeug:09/11/2022, 23:08:06, 127.0.0.1 - - [11/Sep/2022 23:08:06] "GET /1 HTTP/1.1" 200 -
+224:INFO:werkzeug:09/11/2022, 23:08:06, 127.0.0.1 - - [11/Sep/2022 23:08:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+37:INFO:app:09/11/2022, 23:08:08, SELECT * FROM posts
+39:DEBUG:app:09/11/2022, 23:08:08, Articles "2020 CNCF Annual Report,KubeCon + CloudNativeCon 2021,Kubernetes v1.20 Release Notes,CNCF Cloud Native Interactive Landscape,CNCF Cloud Native Definition v1.0,Kubernetes Certification" fetched from database!
+224:INFO:werkzeug:09/11/2022, 23:08:08, 127.0.0.1 - - [11/Sep/2022 23:08:08] "GET / HTTP/1.1" 200 -
+224:INFO:werkzeug:09/11/2022, 23:08:08, 127.0.0.1 - - [11/Sep/2022 23:08:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:224:09/11/2022, 23:08:59, [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.0.100:3111
+INFO:werkzeug:224:09/11/2022, 23:08:59, [33mPress CTRL+C to quit[0m
+INFO:app:37:09/11/2022, 23:09:01, SELECT * FROM posts
+DEBUG:app:39:09/11/2022, 23:09:01, Articles "2020 CNCF Annual Report,KubeCon + CloudNativeCon 2021,Kubernetes v1.20 Release Notes,CNCF Cloud Native Interactive Landscape,CNCF Cloud Native Definition v1.0,Kubernetes Certification" fetched from database!
+INFO:werkzeug:224:09/11/2022, 23:09:01, 127.0.0.1 - - [11/Sep/2022 23:09:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:224:09/11/2022, 23:09:01, 127.0.0.1 - - [11/Sep/2022 23:09:01] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:37:09/11/2022, 23:09:03, SELECT * FROM posts
+DEBUG:app:39:09/11/2022, 23:09:03, Articles "2020 CNCF Annual Report,KubeCon + CloudNativeCon 2021,Kubernetes v1.20 Release Notes,CNCF Cloud Native Interactive Landscape,CNCF Cloud Native Definition v1.0,Kubernetes Certification" fetched from database!
+INFO:werkzeug:224:09/11/2022, 23:09:03, 127.0.0.1 - - [11/Sep/2022 23:09:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:224:09/11/2022, 23:09:03, 127.0.0.1 - - [11/Sep/2022 23:09:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:24:09/11/2022, 23:09:04, SELECT * FROM posts WHERE id = 1
+INFO:app:52:09/11/2022, 23:09:04, Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:224:09/11/2022, 23:09:04, 127.0.0.1 - - [11/Sep/2022 23:09:04] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:224:09/11/2022, 23:09:04, 127.0.0.1 - - [11/Sep/2022 23:09:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:37:09/11/2022, 23:09:05, SELECT * FROM posts
+DEBUG:app:39:09/11/2022, 23:09:05, Articles "2020 CNCF Annual Report,KubeCon + CloudNativeCon 2021,Kubernetes v1.20 Release Notes,CNCF Cloud Native Interactive Landscape,CNCF Cloud Native Definition v1.0,Kubernetes Certification" fetched from database!
+INFO:werkzeug:224:09/11/2022, 23:09:05, 127.0.0.1 - - [11/Sep/2022 23:09:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:224:09/11/2022, 23:09:05, 127.0.0.1 - - [11/Sep/2022 23:09:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:224:09/11/2022, 23:11:14, [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3111
+ * Running on http://192.168.0.100:3111
+INFO:werkzeug:224:09/11/2022, 23:11:14, [33mPress CTRL+C to quit[0m
+INFO:werkzeug:224:09/11/2022, 23:11:20, 127.0.0.1 - - [11/Sep/2022 23:11:20] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:224:09/11/2022, 23:11:20, 127.0.0.1 - - [11/Sep/2022 23:11:20] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:73:09/11/2022, 23:11:57, BEGIN 
+INFO:app:73:09/11/2022, 23:11:57, INSERT INTO posts (title, content) VALUES ('Post created for developer job', 'Job vacancy created for javascript developer.')
+INFO:app:75:09/11/2022, 23:11:57, COMMIT
+INFO:app:77:09/11/2022, 23:11:57, New Article "Post created for developer job" created!
+INFO:werkzeug:224:09/11/2022, 23:11:57, 127.0.0.1 - - [11/Sep/2022 23:11:57] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:app:37:09/11/2022, 23:11:57, SELECT * FROM posts
+DEBUG:app:39:09/11/2022, 23:11:57, Articles "2020 CNCF Annual Report,KubeCon + CloudNativeCon 2021,Kubernetes v1.20 Release Notes,CNCF Cloud Native Interactive Landscape,CNCF Cloud Native Definition v1.0,Kubernetes Certification,Post created for developer job" fetched from database!
+INFO:werkzeug:224:09/11/2022, 23:11:57, 127.0.0.1 - - [11/Sep/2022 23:11:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:224:09/11/2022, 23:11:57, 127.0.0.1 - - [11/Sep/2022 23:11:57] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:58:09/11/2022, 23:12:04, The "About Us" page is retrieved!
+INFO:werkzeug:224:09/11/2022, 23:12:04, 127.0.0.1 - - [11/Sep/2022 23:12:04] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:224:09/11/2022, 23:12:04, 127.0.0.1 - - [11/Sep/2022 23:12:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:37:09/11/2022, 23:12:07, SELECT * FROM posts
+DEBUG:app:39:09/11/2022, 23:12:07, Articles "2020 CNCF Annual Report,KubeCon + CloudNativeCon 2021,Kubernetes v1.20 Release Notes,CNCF Cloud Native Interactive Landscape,CNCF Cloud Native Definition v1.0,Kubernetes Certification,Post created for developer job" fetched from database!
+INFO:werkzeug:224:09/11/2022, 23:12:07, 127.0.0.1 - - [11/Sep/2022 23:12:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:224:09/11/2022, 23:12:07, 127.0.0.1 - - [11/Sep/2022 23:12:07] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:24:09/11/2022, 23:12:08, SELECT * FROM posts WHERE id = 1
+INFO:app:52:09/11/2022, 23:12:08, Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:224:09/11/2022, 23:12:08, 127.0.0.1 - - [11/Sep/2022 23:12:08] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:224:09/11/2022, 23:12:08, 127.0.0.1 - - [11/Sep/2022 23:12:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:37:09/11/2022, 23:12:09, SELECT * FROM posts
+DEBUG:app:39:09/11/2022, 23:12:09, Articles "2020 CNCF Annual Report,KubeCon + CloudNativeCon 2021,Kubernetes v1.20 Release Notes,CNCF Cloud Native Interactive Landscape,CNCF Cloud Native Definition v1.0,Kubernetes Certification,Post created for developer job" fetched from database!
+INFO:werkzeug:224:09/11/2022, 23:12:09, 127.0.0.1 - - [11/Sep/2022 23:12:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:224:09/11/2022, 23:12:09, 127.0.0.1 - - [11/Sep/2022 23:12:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
